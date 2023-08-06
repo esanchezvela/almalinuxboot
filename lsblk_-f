@@ -1,0 +1,34 @@
+[root@linux grub2]# lsblk -f 
+NAME                     FSTYPE      LABEL     UUID                                   MOUNTPOINT
+sda                                                                                   
+├─sda1                                                                                
+└─sda2                   ntfs        data      8A0A37470A373015                       
+sdb                                                                                   
+├─sdb1                   vfat                  AB38-CA61                              
+├─sdb2                   ext4                  5a908028-b8cb-4431-a64b-ba5d9c127d74   
+├─sdb3                   LVM2_member           h6Me3t-ejlg-B5D6-JvAQ-bXzm-D4ey-ifv2bY 
+│ ├─cl-root              xfs                   1d706802-bf15-477c-8e2c-8d7be95a671c   
+│ └─cl-swap              swap                  1d134cca-26f7-47b1-b603-7dd09f4bed49   
+├─sdb4                   LVM2_member           wSw1kB-SVPU-CL5I-4xIw-kLSk-kJLw-T6DYFr 
+│ └─data-home            xfs                   ac4e8ec2-239c-450f-b51c-d31d98ce189a   
+├─sdb5                   xfs                   b1145993-0b5a-4d98-8d6c-506b9daa79d8   
+├─sdb6                                                                                
+├─sdb7                   xfs                   2f58346f-d455-4ed9-a074-137955df1d85   
+├─sdb8                   vfat                  0C1E-3FDB                              
+├─sdb9                   xfs                   7c3c453e-038c-466f-b734-a46b71dfc749   
+├─sdb10                  LVM2_member           JFgJIG-cbWg-uyqX-oOb5-p5nr-eIVz-j7KNeS 
+│ ├─fedora-root          xfs                   867e8509-837e-498d-94c5-6573364ffed2   
+│ └─fedora-home          xfs                   0c8fc68c-c106-4c04-a90b-5d326ef7ee99   
+└─sdb11                  ext4                  9e66e4fb-066c-47e7-afe0-3cd9de2a4ea6   
+sdc                                                                                   
+├─sdc1                   vfat                  1CF1-D9BA                              /boot/efi
+├─sdc2                                                                                
+├─sdc3                   ntfs                  56ECF70AECF6E2E3                       
+├─sdc4                   ntfs                  BA0E82FE0E82B345                       
+├─sdc5                   xfs         bootal8   d2370ffc-57d7-413b-a59c-2c8527c2c7b0   /boot
+├─sdc6                   LVM2_member           LdbPy4-i4r8-dWcE-uEYp-g302-1Qb6-ZzGO8w 
+│ └─almalinux-root       xfs         alma8     000a13ea-8c07-4de8-a2db-325a3f9e5b77   /
+├─sdc7                   xfs         alma9boot 28e0a8a1-03c8-4424-82b5-e4bc810f3f9d   /al9/boot
+└─sdc8                   LVM2_member           bHVLjF-AaLK-0oUr-JYwa-z4CP-IYN0-dXF3vC 
+  └─almalinux_linux-root xfs         alma9     012adfe9-aff5-4891-9eab-eb03b157744e   /al9
+[root@linux grub2]# 
